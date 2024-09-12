@@ -1,6 +1,9 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
+    id("com.google.devtools.ksp")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -50,20 +53,60 @@ android {
 }
 
 dependencies {
+    val retrofitVersion = "2.11.0"
+    val roomVersion = "2.6.1"
+    val coreKtxVersion = "1.13.1"
+    val lifecycleRuntimeKtxVersion = "2.8.3"
 
-    implementation("androidx.core:core-ktx:1.13.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
-    implementation("androidx.activity:activity-compose:1.9.1")
-    implementation(platform("androidx.compose:compose-bom:2023.08.00"))
+    val composeBomVersion = "2023.08.00"
+    val activityComposeVersion = "1.9.0"
+    val navigationComposeVersion = "2.7.7"
+
+    val hiltAndroidVersion = "2.51.1"
+    val hiltNavigationComposeVersion = "1.2.0"
+    val hiltCompilerVersion = "2.44.2"
+
+    val junitVersion = "4.13.2"
+    val extJUnitVersion = "1.2.1"
+    val espressoCoreVersion = "3.6.1"
+
+    val hiltWorkVersion = "1.2.0"
+    val workManagerVersion = "2.9.0"
+
+    implementation("androidx.core:core-ktx:$coreKtxVersion")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleRuntimeKtxVersion")
+
+    implementation(platform("androidx.compose:compose-bom:$composeBomVersion"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.2.1")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
-    androidTestImplementation(platform("androidx.compose:compose-bom:2023.08.00"))
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+
+    implementation("androidx.activity:activity-compose:$activityComposeVersion")
+    implementation("androidx.navigation:navigation-compose:$navigationComposeVersion")
+
+    implementation("com.google.dagger:hilt-android:$hiltAndroidVersion")
+    implementation("androidx.hilt:hilt-navigation-compose:$hiltNavigationComposeVersion")
+    ksp("com.google.dagger:hilt-android-compiler:$hiltCompilerVersion")
+
+    implementation("androidx.work:work-runtime-ktx:${workManagerVersion}")
+    implementation("androidx.hilt:hilt-work:${hiltWorkVersion}")
+    ksp("androidx.hilt:hilt-compiler:${hiltWorkVersion}")
+
+    implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
+    implementation("com.squareup.retrofit2:converter-simplexml:$retrofitVersion")
+
+    implementation("androidx.room:room-runtime:$roomVersion")
+    implementation("androidx.room:room-ktx:$roomVersion")
+    ksp("androidx.room:room-compiler:$roomVersion")
+
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    testImplementation("junit:junit:$junitVersion")
+
+    androidTestImplementation("androidx.test.ext:junit:$extJUnitVersion")
+    androidTestImplementation("androidx.test.espresso:espresso-core:$espressoCoreVersion")
+    androidTestImplementation(platform("androidx.compose:compose-bom:$composeBomVersion"))
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
 }
