@@ -14,8 +14,8 @@ I have 5 years of experience as an Android developer. I mainly work with Android
 
 ## Resume
 
-Feel free to check out my resume/CV for more details about my professional background and qualifications: 
-[Resume/CV](https://docs.google.com/document/d/1WB6HYGTxDt0y86JPZBBONdVIE9c_ewSmBf6h7Dm8rEQ/edit?usp=sharing).
+Feel free to check out my [Resume/CV](https://docs.google.com/document/d/1WB6HYGTxDt0y86JPZBBONdVIE9c_ewSmBf6h7Dm8rEQ/edit?usp=sharing) for more details about my professional background and qualifications: 
+.
 
 Thank you for considering me for any suitable positions!
 
