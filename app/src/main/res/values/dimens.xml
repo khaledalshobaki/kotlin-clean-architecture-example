@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General spacing dimensions used throughout the app -->
+    <dimen name="spacing_extra_small">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">12dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+
+    <!-- Margins specific to the character list item layout -->
+    <dimen name="character_list_item_margin_vertical">16dp</dimen>
+    <dimen name="character_list_item_margin_horizontal">12dp</dimen>
+
+    <!-- Height for the character list item image -->
+    <dimen name="character_list_item_image_height">160dp</dimen>
+
+    <!-- Dimensions for character details card -->
+    <dimen name="character_details_card_corner_radius">16dp</dimen>
+    <dimen name="character_details_card_elevation">8dp</dimen>
+    <dimen name="character_details_image_size">150dp</dimen>
+
+</resources>

@@ -1,3 +1,36 @@
 <resources>
-    <string name="app_name">kotlin-clean-architecture</string>
+    <string name="app_name">Rick &amp; Morty</string>
+
+    <!-- Error Messages -->
+    <string name="error_network">Network error occurred. Please try again.</string>
+    <string name="error_timeout">Request timed out. Please try again.</string>
+    <string name="error_unknown">An unknown error occurred. Please try again.</string>
+    <string name="error_failed_to_load">Failed to load content. Please try again.</string>
+
+
+    <!-- Informational Messages -->
+    <string name="message_loading">Loading…</string>
+    <string name="message_empty_state">No content available</string>
+
+    <!-- Character Status Strings -->
+    <string name="status_alive">Alive</string>
+    <string name="status_dead">Dead</string>
+    <string name="status_unknown">Unknown</string>
+
+    <!-- Character Species Strings -->
+    <string name="species_human">Human</string>
+    <string name="species_alien">Alien</string>
+    <string name="species_unknown">Unknown</string>
+
+    <!-- Character Gender Strings -->
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_unknown">Unknown</string>
+
+    <!-- Button Strings -->
+    <string name="retry">Retry</string>
+
+    <!-- Accessibility  -->
+    <string name="character_image_description">Image of %1$s</string>
+    <string name="back_button_description">Back button</string>
 </resources>

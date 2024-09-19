@@ -1,2 +1,0 @@
-package com.sample.kotlin.cleanarchitecture.ui.screen.character_list
-
