@@ -38,8 +38,3 @@ This Android application is built using Clean Architecture, with the codebase or
 - **Domain Layer:** Contains business logic and use cases.
 - **Presentation Layer:** Manages UI components and user interactions.
 - **Data Layer:** Handles data retrieval, including API and database operations.
-
-## Features
-
-- **Clean Architecture:** Ensures a modular and maintainable codebase.
-- **Custom Pagination:** Implemented manually to provide tailored pagination control.
