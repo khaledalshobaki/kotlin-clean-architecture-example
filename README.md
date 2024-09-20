@@ -1,3 +1,6 @@
+![Mockup](https://i.ibb.co/f8JD5Dg/Pixel-True-Mockup-medium.png)
+
+
 # 👀 Seeking New Opportunities - Open to Work 👋
 
 I am currently looking for new career opportunities as an Android developer. If you know of any roles that align with my skills and experience, I would love to hear from you!
